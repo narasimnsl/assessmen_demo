@@ -1,0 +1,96 @@
+/* AnswerOption Component */
+.answerOptionsUL{
+    padding-left: 0px;
+}
+
+.answerOption {
+    
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom:2px;
+    position: relative;
+    
+    
+    .checkInd{
+      position: absolute;
+      right:10px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      &.incor{
+        color:@fb_incor_col;
+      }
+      &.cor{
+        color:@fb_cor_col;
+      }
+    }
+
+    .radioCustomButton {
+      position: absolute;
+      width: auto;
+      opacity: 0;
+      display: none;
+    }
+
+    .radioCustomLabel {
+      display: block;
+      vertical-align: middle;
+      margin: 0;
+      background-color:@ans_bg_col;
+      border-radius: 2px;
+      padding: 10px 20px;
+      cursor: pointer;
+      &:hover{
+        background-color: @ans_hover_bg_col;
+      }
+      
+      &.disabled {
+        color:@ans_dis_txt_col;
+        cursor: default;
+        &:hover{
+          background-color: @ans_bg_col;
+        }
+        &.checked_incor {
+          color:@fb_incor_col;
+          cursor: default;
+        } 
+        &.checked_cor {
+          color:@fb_cor_col;
+          cursor: default;
+        } 
+        
+      }
+    }
+
+    
+
+  }
+  
+  /* Feedback Component */
+  .feedback{
+    padding: 10px;
+    border-radius: 3px;
+    color:@fb_txt_col;
+    margin-bottom: 20px;
+    &.incor{
+      background-color:@fb_incor_col;
+    }
+    &.cor{
+      background-color:@fb_cor_col;
+    }
+    .submitButton{
+      margin:0px
+    }
+    .titleTxt {
+      margin-top:0px;
+    }
+  }
+
+  
+
+  
+  
+  
+  
+  
+  

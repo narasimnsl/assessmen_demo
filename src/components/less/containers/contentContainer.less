@@ -1,0 +1,63 @@
+
+.contentContainer{
+    padding: 10px 30px;
+    display:flex;
+    
+    .leftCol {
+        flex-basis: 50%;
+        padding-right: 20px;
+        
+    }
+    .rightCol {
+        flex-basis: 50%;
+        
+        img {
+            text-align: right;
+            width:100%;
+        }
+    }
+    .submitButton{
+        display:block;
+        margin:40px;
+        background-color:@content_btn_bg_clr;
+        color: @content_btn_txt_clr;
+        padding: 8px 22px;
+        height:50px;
+        text-transform: uppercase;
+        text-align: center;
+        border: none;
+        font-weight: 500;
+        font-size: 16px;
+        cursor:pointer;
+        &:hover{
+            background-color:@content_btn_hover_clr; 
+        }
+    }
+    
+    
+   
+}
+
+
+/* On screens that are 768px or less, set the Module Wrapper width 100% */
+@media screen and (max-width: 768px) {
+    
+    .contentContainer{
+        padding: 10px;
+        flex-wrap: wrap;
+        .leftCol {
+            flex-basis: 100%;
+            padding-right: 0px;
+            margin-bottom: 20px;
+        }
+        .rightCol {
+            
+            flex-basis: 100%;
+            img {
+                text-align: center;
+                
+            }
+        }
+        
+    }
+}
